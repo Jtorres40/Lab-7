@@ -1,7 +1,7 @@
 body {
   background-color: #111;
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ h1 {
   margin: 0 auto;
 }
 
-/* Adding a star pattern to the body background */
+
 body::before {
   content: "";
   position: fixed;
@@ -50,9 +50,9 @@ body::before {
   z-index: -1;
 }
 
-/* Additional styles for a futuristic feel */
+
 td {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 td:nth-child(odd) {
@@ -62,4 +62,5 @@ td:nth-child(odd) {
 td:nth-child(even) {
   background-color: #444;
 }
+
 
