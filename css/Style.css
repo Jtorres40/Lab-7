@@ -1,0 +1,65 @@
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #66ff66;
+  margin: 20px 0;
+}
+
+#planets {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+#planets th,
+#planets td {
+  border: 1px solid #444;
+  text-align: center;
+  padding: 12px;
+}
+
+#planets th {
+  background-color: #222;
+  color: #66ff66;
+}
+
+#planets img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adding a star pattern to the body background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/stars.png');
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Additional styles for a futuristic feel */
+td {
+  font-size: 1.1em;
+}
+
+td:nth-child(odd) {
+  background-color: #333;
+}
+
+td:nth-child(even) {
+  background-color: #444;
+}
+
